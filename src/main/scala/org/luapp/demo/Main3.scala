@@ -18,8 +18,9 @@ object Main3 extends App {
         println("Hello, world!")
     }
 
+    // 以下语句会最后输出
     delayedInit({
-        println("test")
+        println("in end, test")
     })
 
     lazy val source = Source.fromFile(getClass.getResource("/myfile.txt").getFile(), "UTF-8")
